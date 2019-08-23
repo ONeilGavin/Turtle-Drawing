@@ -26,7 +26,7 @@ def draw(show, speed):
 
 
         for i in range(5): #Draw Square
-            turtle.forward(h)
+            turtle.forward(height)
             turtle.right(90)
 
         turtle.right(3) #Turn to create a spiral
