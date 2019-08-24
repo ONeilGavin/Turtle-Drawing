@@ -3,7 +3,7 @@ import Drawing
 import Recamen
 import Ulam
 
-
+#Start from simpler and then get more advanced. (just get 'No' to work)
 def runDrawing(draw, drawSpeed, drawType):
     if drawType == 0:
         Drawing.draw(draw, drawSpeed)
