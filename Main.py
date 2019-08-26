@@ -1,12 +1,13 @@
 import tkinter as tk
-import Drawing
 import Recamen
+import SquareSwirl
 import Ulam
 
-#Start from simpler and then get more advanced. (just get 'No' to work)
+
+
 def runDrawing(draw, drawSpeed, drawType):
     if drawType == 0:
-        Drawing.draw(draw, drawSpeed)
+        SquareSwirl.draw(draw, drawSpeed)
     elif drawType == 1:
         Recamen.draw(draw, drawSpeed)
     elif drawType == 2:
@@ -16,17 +17,20 @@ def drawingType(num):
     global type
     global draw
     global drawSpeed
+   
     if num == 0:
         type = 0
     elif num == 1:
         type = 1
     elif num == 2:
         type = 2
-    if yesCount.get() != 0:
+
+    if yesCount.get() == 1:
         draw = True
         drawSpeed = speedSlider.get()
-    else:
+    elif noCount.get() == 1:
         draw = False
+        drawSpeed = 0
 
 window = tk.Tk()
 window.title('Drawing')
@@ -65,4 +69,3 @@ closeButton = tk.Button(window, text = "Quit", command = lambda : window.destroy
 closeButton.pack()
 
 window.mainloop()
-
