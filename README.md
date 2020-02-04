@@ -7,5 +7,6 @@ __Square Swirl example:__
 __Recamen example:__
 ![](Images/RecamenPicture.png)
 
-__Ulam example:__
+__Ulam example:__    
+
 ![](Images/UlamPicture.png)
